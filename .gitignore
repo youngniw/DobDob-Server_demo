@@ -19,6 +19,7 @@ bin/
 
 ### properties  ###
 src/main/resources/application.properties
+src/test/java/com/tave7/dobdob/service
 
 ### IntelliJ IDEA ###
 .idea
