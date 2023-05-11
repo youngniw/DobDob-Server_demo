@@ -6,9 +6,9 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Getter
-public class BadRequestException extends RuntimeException {
+public class ForbiddenException extends RuntimeException {
     // 예외 세팅
-    public static final BadRequestException NOT_VALID_SOCIAL_LOGIN_TOKEN = new BadRequestException(ErrorCode.NOT_VALID_SOCIAL_LOGIN_TOKEN);
+    public static final ForbiddenException NOT_AGREE_SOCIAL_LOGIN = new ForbiddenException(ErrorCode.NOT_AGREE_SOCIAL_LOGIN);
 
     public final ErrorCode errorCode;
 }

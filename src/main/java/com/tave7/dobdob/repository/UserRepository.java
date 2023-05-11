@@ -10,4 +10,7 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<Users, Long> {
     // 이메일로 사용자 정보 조회
     Optional<Users> findByEmail(String email);
+
+    // 일련번호와 이메일로 사용자 정보 조회
+    Optional<Users> findByUserIdAndEmail(Long userId, String email);
 }
